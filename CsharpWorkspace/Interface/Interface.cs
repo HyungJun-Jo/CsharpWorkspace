@@ -40,7 +40,7 @@ namespace Interface
             this.logger = logger;
         }
 
-        public void start()
+        public void Start()
         {
             while (true)
             {
@@ -59,7 +59,7 @@ namespace Interface
         static void Main(string[] args)
         {
             ClimateMonitor monitor = new ClimateMonitor(new FileLogger("MyLog.txt"));
-            monitor.start();
+            monitor.Start();
         }
     }
 
