@@ -36,9 +36,29 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Dynamic.Dynamic</StartupObject>
+    <StartupObject>Dynamic.WithPython</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IronPython, Version=2.7.7.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\IronPython 2.7\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.7.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\IronPython 2.7\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.1.2.22, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\IronPython 2.7\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.2.22, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\IronPython 2.7\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.1.2.22, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\IronPython 2.7\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,7 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dynamic\Dynamic.cs" />
+    <Compile Include="Dynamic\Dynamic_WithPython.cs" />
     <Compile Include="Event\Car.cs" />
     <Compile Include="Event\Event_Delegate.cs" />
     <Compile Include="Event\Event.cs" />
@@ -61,6 +81,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\IronPython.dll" />
+    <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\IronPython.Modules.dll" />
+    <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\Microsoft.Dynamic.dll" />
+    <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\Microsoft.Scripting.dll" />
+    <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\Microsoft.Scripting.Metadata.dll" />
+    <Analyzer Include="Dynamic\IronPython-2.7.7\Microsoft.Scripting.AspNet.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
