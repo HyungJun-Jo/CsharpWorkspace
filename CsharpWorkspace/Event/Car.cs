@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventDemo
+namespace Event_Demo
 {
     class Car
     {

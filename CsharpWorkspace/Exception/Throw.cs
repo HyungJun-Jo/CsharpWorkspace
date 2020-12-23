@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace _12장_Throw_MainApp
+namespace Exception_Throw
 {
-    class MainApp
+    class Throw
     {
         static void DoSomething(int arg)
         {

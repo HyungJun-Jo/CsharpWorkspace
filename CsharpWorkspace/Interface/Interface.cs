@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace _8장_Interface_mainApp
+namespace Interface
 {
     interface ILogger
     {
@@ -54,7 +54,7 @@ namespace _8장_Interface_mainApp
         }
     }
 
-    class MainApp
+    class Demo
     {
         static void Main(string[] args)
         {

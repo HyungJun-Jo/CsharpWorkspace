@@ -36,7 +36,7 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LINQ_MinMaxAvg.MainApp</StartupObject>
+    <StartupObject>Dynamic.Dynamic</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,8 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dynamic\Dynamic.cs" />
+    <Compile Include="Event\Car.cs" />
+    <Compile Include="Event\Event_Delegate.cs" />
+    <Compile Include="Event\Event.cs" />
+    <Compile Include="Exception\Throw.cs" />
+    <Compile Include="Interface\Interface.cs" />
     <Compile Include="LINQ\LINQ_MinMaxAvg.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

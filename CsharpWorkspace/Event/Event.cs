@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventDemo
+namespace Event_Demo
 {
-    class Program
+    class Demo
     {
         static void Main(string[] args)
         {

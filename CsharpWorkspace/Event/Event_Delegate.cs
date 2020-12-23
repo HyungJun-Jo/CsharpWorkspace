@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _13장_Event_Example13_2
+namespace Event_Delegate
 {
 
     delegate void MyDelegate(int a);
@@ -16,7 +16,7 @@ namespace _13장_Event_Example13_2
         }
     }
 
-    class Program
+    class Delegate
     {
 
         static public void MyHandler(int i)

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LINQ_MinMaxAvg
+namespace LINQ
 {
     class Profile
     {
@@ -12,7 +12,7 @@ namespace LINQ_MinMaxAvg
         public int Height { get; set; }
     }
 
-    class MainApp
+    class MinMaxAvg
     {
         static void Main(string[] args)
         {
