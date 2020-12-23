@@ -87,7 +87,6 @@
     <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\Microsoft.Dynamic.dll" />
     <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\Microsoft.Scripting.dll" />
     <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\Microsoft.Scripting.Metadata.dll" />
-    <Analyzer Include="Dynamic\IronPython-2.7.7\Microsoft.Scripting.AspNet.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
