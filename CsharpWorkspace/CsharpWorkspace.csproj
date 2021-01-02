@@ -36,7 +36,7 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Dynamic.WithPython</StartupObject>
+    <StartupObject>DesignPatterns.Strategy.MiniDuckSimulator</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IronPython, Version=2.7.7.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
@@ -69,13 +69,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dynamic\Dynamic_WithPython.cs" />
-    <Compile Include="Event\Car.cs" />
-    <Compile Include="Event\Event_Delegate.cs" />
-    <Compile Include="Event\Event.cs" />
-    <Compile Include="Exception\Throw.cs" />
-    <Compile Include="Interface\Interface.cs" />
-    <Compile Include="LINQ\LINQ_MinMaxAvg.cs" />
+    <Compile Include="Basic\Dynamic\Dynamic_WithPython.cs" />
+    <Compile Include="Basic\Event\Car.cs" />
+    <Compile Include="Basic\Event\Event_Delegate.cs" />
+    <Compile Include="Basic\Event\Event.cs" />
+    <Compile Include="Basic\Exception\Throw.cs" />
+    <Compile Include="Basic\Interface\Interface.cs" />
+    <Compile Include="Basic\LINQ\LINQ_MinMaxAvg.cs" />
+    <Compile Include="DesignPatterns\Strategy\Class\Duck.cs" />
+    <Compile Include="DesignPatterns\Strategy\Class\MallardDuck.cs" />
+    <Compile Include="DesignPatterns\Strategy\Class\ModelDuck.cs" />
+    <Compile Include="DesignPatterns\Strategy\Interface\FlyBehavior.cs" />
+    <Compile Include="DesignPatterns\Strategy\MiniDuckSimulator.cs" />
+    <Compile Include="DesignPatterns\Strategy\Interface\QuackBehavior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
