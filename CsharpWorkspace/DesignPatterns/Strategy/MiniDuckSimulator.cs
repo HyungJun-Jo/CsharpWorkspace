@@ -16,14 +16,14 @@ namespace DesignPatterns.Strategy
 
             // MallardDuck에서 행동을 부여해줌으로서 공통코드와 구분코드를 분할하여 개발할 수 있다.
             Duck mallard = new MallardDuck();
-            mallard.Display();
-            mallard.PerformFly();
+            mallard.Display();                                  // 공통함수로 모든 Duck이 가지고 있는 함수
+            mallard.PerformFly();                               // Duck의 종류마다 다른 기능을 가져야 함으로 인터페이스를 활용한 Strategy Pattern을 사용하여 각 클래스별로 기능을 별도 정의 가능하도록 한다.
             mallard.PerformQuack();
             Console.ReadLine();
 
             // 동적으로 행동을 부여도 가능하다.
             Duck model = new ModelDuck();
-            model.Display();
+            model.Display();                                    
             model.PerformFly();                                 // 초기값
 
             Console.WriteLine("행동 변경!");
