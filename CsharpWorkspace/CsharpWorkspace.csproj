@@ -36,7 +36,7 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Basic.FileIO.ExtractFileName</StartupObject>
+    <StartupObject>DesignPatterns.Observer.WeatherStation</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IronPython, Version=2.7.7.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
@@ -79,6 +79,12 @@
     <Compile Include="Basic\FileIO\FileIO.cs" />
     <Compile Include="Basic\Interface\Interface.cs" />
     <Compile Include="Basic\LINQ\LINQ_MinMaxAvg.cs" />
+    <Compile Include="DesignPatterns\Observer\Class\CurrentConditionsDisplay.cs" />
+    <Compile Include="DesignPatterns\Observer\Class\Observable.cs" />
+    <Compile Include="DesignPatterns\Observer\Class\WeatherData.cs" />
+    <Compile Include="DesignPatterns\Observer\Interface\IDisplayElement.cs" />
+    <Compile Include="DesignPatterns\Observer\Interface\IObserver.cs" />
+    <Compile Include="DesignPatterns\Observer\WeatherStation.cs" />
     <Compile Include="DesignPatterns\Strategy\Class\Duck.cs" />
     <Compile Include="DesignPatterns\Strategy\Class\MallardDuck.cs" />
     <Compile Include="DesignPatterns\Strategy\Class\ModelDuck.cs" />
@@ -97,5 +103,6 @@
     <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\Microsoft.Scripting.dll" />
     <Analyzer Include="C:\Program Files %28x86%29\IronPython 2.7\Microsoft.Scripting.Metadata.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
