@@ -45,7 +45,7 @@ namespace DesignPatterns.Observer.Class
 
         public void SetChanged()
         {
-            changed = true;
+            changed = true;         // changed 상태를 확인하면서 업데이트를 필요할떄 분기하여 할 수 있도록 합니다.
         }
     }
 }

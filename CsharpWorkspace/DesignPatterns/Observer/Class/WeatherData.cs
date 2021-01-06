@@ -38,7 +38,7 @@ namespace DesignPatterns.Observer.Class
         public void MeasurementsChanged()
         {
             // 기상 스체이션으로부터 갱신된 측정치를 받으면 옵저버들한테 알립니다.
-            SetChanged();
+            SetChanged();      
             NotifyObservers();
         }
 
