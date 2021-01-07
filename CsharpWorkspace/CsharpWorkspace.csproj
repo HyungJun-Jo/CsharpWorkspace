@@ -36,7 +36,7 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DesignPatterns.Observer.WeatherStation</StartupObject>
+    <StartupObject>DesignPatterns.Singleton.WebAPIClient</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IronPython, Version=2.7.7.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
@@ -85,6 +85,9 @@
     <Compile Include="DesignPatterns\Observer\Interface\IDisplayElement.cs" />
     <Compile Include="DesignPatterns\Observer\Interface\IObserver.cs" />
     <Compile Include="DesignPatterns\Observer\WeatherStation.cs" />
+    <Compile Include="DesignPatterns\Singleton\Class\CurrentUser.cs" />
+    <Compile Include="DesignPatterns\Singleton\Class\UserInfoDisplay.cs" />
+    <Compile Include="DesignPatterns\Singleton\WebAPIClient.cs" />
     <Compile Include="DesignPatterns\Strategy\Class\Duck.cs" />
     <Compile Include="DesignPatterns\Strategy\Class\MallardDuck.cs" />
     <Compile Include="DesignPatterns\Strategy\Class\ModelDuck.cs" />
