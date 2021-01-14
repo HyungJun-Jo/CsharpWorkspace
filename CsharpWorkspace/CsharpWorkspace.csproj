@@ -36,7 +36,7 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DesignPatterns.Singleton.WebAPIClient</StartupObject>
+    <StartupObject>DesignPatterns.Decorator.StarbucksCoffee</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IronPython, Version=2.7.7.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
@@ -79,6 +79,9 @@
     <Compile Include="Basic\FileIO\FileIO.cs" />
     <Compile Include="Basic\Interface\Interface.cs" />
     <Compile Include="Basic\LINQ\LINQ_MinMaxAvg.cs" />
+    <Compile Include="DesignPatterns\Decorator\Class\CondimentDecorator.cs" />
+    <Compile Include="DesignPatterns\Decorator\Class\Beverage.cs" />
+    <Compile Include="DesignPatterns\Decorator\StarbucksCoffee.cs" />
     <Compile Include="DesignPatterns\Observer\Class\CurrentConditionsDisplay.cs" />
     <Compile Include="DesignPatterns\Observer\Class\Observable.cs" />
     <Compile Include="DesignPatterns\Observer\Class\WeatherData.cs" />
